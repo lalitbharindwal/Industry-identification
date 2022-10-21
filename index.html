@@ -3,13 +3,7 @@
     <head>
         <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
         <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-        <py-env>
-            - numpy
-            - pandas
-            - paths:
-                - /data.csv
-        </py-env>
-      </head>
+    </head>
 <body>
 <h2>JavaScript Geolocation</h2>
 <p>Click the button to get your coordinates.</p>
@@ -17,15 +11,9 @@
 <p id="demo"></p>
 <p id = "py">a</p>
 <script src="style/app.js">
-
 </script>
-
-<div style = "color: aqua;">
-<py-script>
-    import pandas as pd
-    df = pd.read_csv('data.csv')
-    domain_in_data = df['domain'].tolist()
-    print(domain_in_data)
+<div style = "color: rgb(0, 0, 0);" class="py">
+<py-script src="identify.py">
 </py-script>
 </div>
 </body>
